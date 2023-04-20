@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facebook Filter</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="filter.css" rel="stylesheet">
+        <script src="extensionBackground.js"></script>
+    </head>
+    <body>
+        <div class="main-block">
+            <div class="title-block">
+                <h3 id="main-title">Remove toxic posts</h1>
+            </div>
+            <div class="input-block">
+                <input id="keywordInput" type="text" maxlength="25" placeholder="Add your keyword here...">
+                <button id="keywordSubmit" type="button">Add</button>
+            </div>
+            <br>
+            <div id="keyword-list" class="list-block">
+                <div id="template" class="keyword-block">
+                    <div class="input-column">
+                        <label class="container">
+                            <input data-checkbox-id="1" type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="label-column">
+                        <label></label>
+                    </div>
+                    <div class="remove-button-column">
+                        <i class="fa fa-close remove-icon remove-button"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

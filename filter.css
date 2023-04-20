@@ -1,0 +1,211 @@
+/***Blocks***/
+.main-block{
+    width: 250px;
+    padding: 8px;
+    padding-top: 0px;
+    font-family: 'Lato', sans-serif;
+}
+.title-block{
+    border-bottom: 1px solid #dfdfdf;
+}
+.input-block{
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.list-block{
+    max-height: 200px;
+    overflow: auto;
+}
+.keyword-block{
+    margin-bottom: 8px;
+}
+.keyword-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.keyword-block:hover{
+    background: #fff8e8;
+}
+.keyword-block:hover > label{
+  font-size: 13pt;
+}
+.input-column {
+  float: left;
+}
+.label-column {
+  float: left;
+  width: 195px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.remove-button-column{
+  float: right;
+  padding-right: 5px;
+}
+
+#template{
+  display: none;
+}
+
+/* Clear floats after the columns */
+
+/*********/
+
+/***Objects***/
+#keywordInput{
+    width: 180px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    height: 20px;
+    padding: 3px 0px 3px 3px;
+    outline: none;
+    -webkit-transition: all 0.30s ease-in-out;
+}
+#keywordSubmit{
+    width: 45px;
+    height: 28px;
+    border-radius: 30px;
+    font-size: 11pt;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    appearance: none;
+    border: 0;
+    background: orange;
+    color: #fff;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+#keywordSubmit:active {
+    /* box-shadow: 0 0 0 2px #dde5f5; */
+    background: rgb(228, 152, 0);
+    font-size: 10.8pt;
+}
+
+#main-title{
+    font-size: 14pt;
+    color: orange;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.remove-button-div{
+  float: right;
+  padding-right: 10px;
+}
+.remove-button{
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.remove-icon{
+  color: #888;
+  font-size: 12pt;
+}
+.remove-icon:active {
+  transform: scale(0.5);
+}
+
+.remove-icon:hover{
+  transform: scale(1.1);
+  color: #555;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: none; 
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100,100,100,0.2); 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa; 
+}
+
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #95d4ef;
+  border-radius: 5px;
+  
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 3px;
+  height: 7px;
+  border: solid #95d4ef;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*********/
+
+/***General***/
+input[type=text]:focus{
+    box-shadow: 0 0 5px #ccc;
+    border: 1px solid #ccc;
+}
+input[type=checkbox] {
+    vertical-align: middle;
+}
+label{
+    font-size: 12pt;
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}
+/*********/
